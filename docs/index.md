@@ -5,5 +5,5 @@
 ## Chat with me
 
 <div align="center">
-  <img src="img/微信图片_20260630195936_948_30.jpg" width="650">
+  <img src="cover.jpg" width="650">
 </div>
