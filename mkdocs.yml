@@ -5,6 +5,5 @@ nav:
   - 第一篇: first-article.md
 theme:
   name: readthedocs
-  pagination: false
 extra_css:
   - assets/css/hide-footer.css
