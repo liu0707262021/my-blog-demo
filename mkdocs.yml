@@ -1,6 +1,6 @@
-site_name: 我的Python博客作业
+site_name: liu0707262021's blog
 site_url: https://liu0707262021/my-blog-demo/
 nav:
   - 首页: index.md
-  - 第一篇博客: first-article.md
+  - 第一篇: first-article.md
 theme: readthedocs
