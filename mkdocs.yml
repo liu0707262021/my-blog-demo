@@ -1,10 +1,10 @@
 site_name: liu0707262021's blog
-site_url: https://liu0707262021/my-blog-demo/
+site_url: https://liu0707262021.github.io/my-blog-demo/
 nav:
   - 首页: index.md
   - 第一篇: first-article.md
 theme:
   name: readthedocs
   pagination: false
-extra:
-  generator: false
+extra_css:
+  - assets/css/hide-footer.css
