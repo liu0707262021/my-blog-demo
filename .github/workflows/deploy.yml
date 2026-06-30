@@ -1,0 +1,36 @@
+name: Deploy MkDocs Blog to Pages
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库代码
+        uses: actions/checkout@v4
+
+      - name: 配置Python环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装MkDocs
+        run: pip install mkdocs
+
+      - name: 构建静态网站
+        run: mkdocs build --site-dir site
+
+      - name: 上传静态页面
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: 部署到GitHub Pages
+        uses: actions/deploy-pages@v4
