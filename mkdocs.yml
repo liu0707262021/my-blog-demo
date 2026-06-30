@@ -1,6 +1,9 @@
 site_name: liu0707262021's blog
 site_url: https://liu0707262021/my-blog-demo/
 nav:
-  - 首页: index.md
   - 第一篇: first-article.md
-theme: readthedocs
+theme:
+  name: readthedocs
+  pagination: false
+extra:
+  generator: false
